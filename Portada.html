@@ -3,34 +3,88 @@
     <head>
         <link type="text/css" rel="stylesheet" href="detalles.css"/>
     </head>
-    <body>
-        <center>
-        <header>
-            <title>Duoc Games</title> <!-- Indica el titulo en la pestana -->
-        <h1 id = "titulo">DUOC GAMES</h1>
-        <h1>Encuentra el juego perfecto para tí</h1> <!-- Es el subtitulo -->
-        </header>
-        
-             <p>Distintos juegos ya sean digitales o fisicos, solo debes navegar por cada categoria y seleccionar el apartado que mas te guste y se adapte a tí</p>
-        
-        </center> <!-- Centra el titulo, subtitulo y descripción -->
+<head>
+    <title>Duoc Games</title>
+    <style>
+        /* Estilos CSS */
+        #titulo {
+            text-align: center;
+        }
+        .contenedor {
+            position: relative;
+            width: 100%;
+            height: 80%;
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .texto-superpuesto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+            font-size: 4em;
+        }
+        img {
+            width: 70%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
 
-        <ul>
-            <h1 id = "titulo">CATEGORIAS</h1>
-            <h3><A HREF="Accion.html"><img src = "Imagenes/Accion.jpg" width = "200" height = "100"> <!-- Imagen de Accion --></A></h3>
-            <h3><A HREF="Carreras.html"><img src = "Imagenes/Carrera.jpg" width = "200" height = "100"> <!-- Imagen de Carrera --></A></h3>
-            <h3><A HREF="Mundo_abierto.html"><img src = "Imagenes/Mundo Abierto.jpg" width = "200" height = "100"> <!-- Imagen de Mundo Abierto --></A></h3>
-            <h3><A HREF="Supervivencia.html"><img src = "Imagenes/Supervivencia.jpg" width = "200" height = "100"> <!-- Imagen de Supervivencia --></A></h3>
-            <h3><A HREF="Terror.html"> <img src = "Imagenes/Terror.jpg" width = "200" height = "100"> <!-- Imagen de terror --></A></h3>
-                
-                
-                
-        </ul>
+<header>
+    <h1 id="titulo">DUOC GAMES</h1>
+    <h2>Encuentra el juego perfecto para tí</h2>
+</header>
 
-
-
-
-
-    </body>
-
+<p>Distintos juegos ya sean digitales o físicos, solo debes navegar por cada categoría y seleccionar el apartado que más te guste y se adapte a tí</p>
+<h2 id = "titulo">CATEGORIAS</h2>
+<div style="align-items: center; position: absolute; width: 50%; left: 25%;">
+    <a href="Accion.html">
+        <div class="contenedor">
+            <div class="texto-superpuesto">
+                Accion
+            </div>
+            <img src="Imagenes/Accion.jpg" alt="Imagen">
+        </div>
+    </a>
+    <a href="Carreras.html">
+        <div class="contenedor">
+            <div class="texto-superpuesto">
+                Carreras
+            </div>
+            <img src="Imagenes/Carrera.jpg" alt="Imagen">
+        </div>
+    </a>
+    <a href="Mundo_abierto.html">
+        <div class="contenedor">
+            <div class="texto-superpuesto">
+                Mundo Abierto
+            </div>
+            <img src="Imagenes/Mundo Abierto.jpg" alt="Imagen">
+        </div>
+    </a>
+    <a href="Supervivencia.html">
+        <div class="contenedor">
+            <div class="texto-superpuesto">
+                Supervivencia
+            </div>
+            <img src="Imagenes/Supervivencia.jpg" alt="Imagen">
+        </div>
+    </a>
+    <a href="Terror.html">
+        <div class="contenedor">
+            <div class="texto-superpuesto">
+                Terror
+            </div>
+            <img src="Imagenes/Terror.jpg" alt="Imagen">
+        </div>
+    </a>
+</div>
+</body>
 </html>
