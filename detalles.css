@@ -113,3 +113,116 @@ h5{
     
     
 }
+
+.Registro {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.contenido {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(Imagenes/fondoRegistro.jpg);
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-formulario{
+    width: 100%;
+    max-width: 400px;
+    background-color: #1f2327e1;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.cont-formulario h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+}
+
+.cont-formulario h1::after{
+    content: '';
+    width: 200px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: chocolate;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-field{
+    background-color: #283d4e;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: chocolate;
+}
+
+form p {
+    color: white;
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+    color: chocolate;
+    margin-left: 5px;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: chocolate;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: background 2s;
+}
+
+.input-group {
+    height: 350px;
+}
+
+.btn-field button.disable {
+    background-color: white;
+    color: black;
+}
