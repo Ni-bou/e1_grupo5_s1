@@ -219,10 +219,14 @@ form p a{
 }
 
 .input-group {
-    height: 350px;
+    height: 500px;
 }
 
 .btn-field button.disable {
     background-color: white;
     color: black;
+}
+
+.btn-limpiar button.disable{
+    height: 30px;
 }
