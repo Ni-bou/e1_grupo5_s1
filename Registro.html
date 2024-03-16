@@ -8,64 +8,151 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <div class="contenido">
         <div class="cont-formulario">
             <h1 id="Titulo"> Registro </h1>
 
-            <form>
+                        <form action="" method="get" name="registro" id="formulario_registro"> 
 
-                <div class="input-group">
+                            <div class="input-group">
+            
+                                <div class="input-field">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" placeholder="Nombre" name="Nombre" id="Nombre">
+                                </div>
+                                <div class="input-field">
+                                    <i class="fa-solid fa-solid fa-circle-user"></i>
+                                    <input type="text" placeholder="Nombre usuario" name="Nombre usuario" id="Nombre usuario">
+                                </div>
+                                <div class="input-field" id="name">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" placeholder="Correo" name="Correo" id="Correo">
+                                </div>
+                                <div class="input-field" id="fecha_nacimiento">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <input type="date" placeholder="Fecha nacimiento" name="Fecha nacimiento" id="Fecha nacimiento">
+                                </div>
+                                <div class="input-field" id="direccion">
+                                    <i class="fa-solid fa-location"></i>
+                                    <input type="text" placeholder="Dirección Despacho" name="Dirección" id="Dirección">
+                                </div>
+                                <div class="input-field">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña">
+                                </div>
+                                <div class="input-field">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="re-password" placeholder="Repetir Contraseña" name="Repetir contraseña" id="Repetir contraseña">
+                                </div>
+                                <p>¿Olvidaste tu contraseña? <a href="#">Haz click aqui!</a> </p>
+                                
+                            </div>
+                            <div class="btn-limpiar">
+                                <button name="limpiar" value="Limpiar" type="reset"   >limpiar</button>
+                                
+                            </div>
+                            <br></br>
+                            <div class="btn-field">
+                                <button id= "registro" type="submit">Registro</button>
+                                <button id= "login" type="submit" class="disable">Login</button>
+                                
+                            </div>
+            
+                        </form>
 
-                    <div class="input-field">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Nombre">
-                    </div>
-                    <div class="input-field">
-                        <i class="fa-solid fa-solid fa-circle-user"></i>
-                        <input type="text" placeholder="Nombre usuario">
-                    </div>
-                    <div class="input-field" id="name">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Correo">
-                    </div>
-                    <div class="input-field" id="fecha_nacimiento">
-                        <i class="fa-solid fa-calendar"></i>
-                        <input type="date" placeholder="fecha nacimiento">
-                    </div>
-                    <div class="input-field" id="direccion">
-                        <i class="fa-solid fa-location"></i>
-                        <input type="text" placeholder="dirección">
-                    </div>
-                    <div class="input-field">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Contraseña">
-                    </div>
-                    <div class="input-field">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="re-password" placeholder="Repetir Contraseña">
-                    </div>
-                    <p>¿Olvidaste tu contraseña? <a href="#">Haz click aqui!</a> </p>
-                    
-                </div>
-                <div class="btn-limpiar">
-                    <button name="limpiar" value="Limpiar" type="reset"   >limpiar</button>
-                    
-                </div>
-                <br></br>
-                <div class="btn-field">
-                    <button id= "registro" type="button">Registro</button>
-                    <button id= "login" type="button" class="disable">Login</button>
-                    
-                </div>
-
-            </form>
         </div>
     </div>
-
-
-
-
-
     <script src="javascript.js"></script>
+
+    <script>
+        const form = document.getElementById('formulario_registro');
+        const nombreInput = document.getElementById('Nombre');
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if(nombreInput.value === ''){
+                alert('Ingrese nombre');
+                return;
+            }
+
+            form.submit();
+        });
+
+
+        const form2 = document.getElementById('formulario_registro');
+        const nombreUsuarioInput = document.getElementById('Nombre usuario');
+
+        form2.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if(nombreUsuarioInput.value === ''){
+                alert('Ingrese Nombre usuario');
+                return;
+            }
+
+            form.submit();
+        });
+
+        const form3 = document.getElementById('formulario_registro');
+        const CorreoInput = document.getElementById('Correo');
+
+        form3.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if(CorreoInput.value === ''){
+                alert('Ingrese Correo electronico');
+                return;
+            }
+
+            form.submit();
+        });
+
+        const form4 = document.getElementById('formulario_registro');
+        const FechaInput = document.getElementById('Fecha nacimiento');
+
+        form4.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if(FechaInput.value === ''){
+                alert('Ingrese Fecha Nacimiento');
+                return;
+            }
+
+            form.submit();
+        });
+
+        const form5 = document.getElementById('formulario_registro');
+        const ContraseñaInput = document.getElementById('Contraseña');
+
+        form5.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if(ContraseñaInput.value === ''){
+                alert('Ingrese Contraseña');
+                return;
+            }
+
+            form.submit();
+        });
+
+        const form6 = document.getElementById('formulario_registro');
+        const RepetirContraseñaInput = document.getElementById('Repetir contraseña');
+
+        form6.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if(RepetirContraseñaInput.value === ''){
+                alert('Repita Contraseña');
+                return;
+            }
+
+            form.submit();
+        });
+                   
+    </script>
+
 </body>
+
 </html>
