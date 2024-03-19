@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="input-field">
                                     <i class="fa-solid fa-lock"></i>
-                                    <input type="re-password" placeholder="Repetir Contraseña" name="Repetir contraseña" id="Repetir contraseña">
+                                    <input type="password" placeholder="Repetir Contraseña" name="Repetir contraseña" id="Repetir contraseña">
                                 </div>
                                 <p>¿Olvidaste tu contraseña? <a href="#">Haz click aqui!</a> </p>
                                 
@@ -60,97 +60,72 @@
                             </div>
             
                         </form>
+                        <br></br>
+            <div style=" display: block;">
+                <A HREF="Portada.html" style="color: aliceblue; height: 30%;;">Volver a la portada</A>  <!-- Enlace a la portada -->
+            </div>
 
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js">
+    </script>
     <script src="javascript.js"></script>
 
     <script>
         const form = document.getElementById('formulario_registro');
-        const nombreInput = document.getElementById('Nombre');
 
-        form.addEventListener('submit', function(event){
-            event.preventDefault();
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-            if(nombreInput.value === ''){
-                alert('Ingrese nombre');
-                return;
-            }
+    const nombreInput = document.getElementById('Nombre');
+    const nombreUsuarioInput = document.getElementById('Nombre usuario');
+    const correoInput = document.getElementById('Correo');
+    const fechaInput = document.getElementById('Fecha nacimiento');
+    const fecha_nacimiento = new Date(fechaInput.value);
+    const contrasenaInput = document.getElementById('Contraseña');
+    const repetirContrasenaInput = document.getElementById('Repetir contraseña');
 
-            form.submit();
-        });
+    var errores = '';
 
+    if (nombreInput.value === '') {
+        errores += 'Ingrese nombre\n';
+    }
 
-        const form2 = document.getElementById('formulario_registro');
-        const nombreUsuarioInput = document.getElementById('Nombre usuario');
+    if (nombreUsuarioInput.value === '') {
+        errores += 'Ingrese Nombre usuario\n';
+    }
 
-        form2.addEventListener('submit', function(event){
-            event.preventDefault();
+    if (correoInput.value === '') {
+        errores += 'Ingrese Correo electrónico\n';
+    }
 
-            if(nombreUsuarioInput.value === ''){
-                alert('Ingrese Nombre usuario');
-                return;
-            }
+    if (fechaInput.value === '') {
+        errores += 'Ingrese Fecha Nacimiento correcta\n';
+    }else if (2011 < fecha_nacimiento.getFullYear()+1){
+        errores += 'Ingrese Fecha Nacimiento valida\n';
+    }
 
-            form.submit();
-        });
+    if (contrasenaInput.value === '') {
+        errores += 'Ingrese Contraseña\n';
+    } else if (contrasenaInput.value.length < 6 || contrasenaInput.value.length >= 18) {
+        errores += 'La contraseña debe tener entre 6 y 18 caracteres\n';
+    } else if (!/(?=.*[A-Z])(?=.*\d)/.test(contrasenaInput.value)) {
+        errores += 'La contraseña debe contener al menos una letra mayúscula y un número\n';
+    }
 
-        const form3 = document.getElementById('formulario_registro');
-        const CorreoInput = document.getElementById('Correo');
+    if (repetirContrasenaInput.value === '') {
+        errores += 'Repita Contraseña\n';
+    } else if (repetirContrasenaInput.value !== contrasenaInput.value) {
+        errores += 'La contraseña no coincide, inténtelo nuevamente\n';
+    }
 
-        form3.addEventListener('submit', function(event){
-            event.preventDefault();
-
-            if(CorreoInput.value === ''){
-                alert('Ingrese Correo electronico');
-                return;
-            }
-
-            form.submit();
-        });
-
-        const form4 = document.getElementById('formulario_registro');
-        const FechaInput = document.getElementById('Fecha nacimiento');
-
-        form4.addEventListener('submit', function(event){
-            event.preventDefault();
-
-            if(FechaInput.value === ''){
-                alert('Ingrese Fecha Nacimiento');
-                return;
-            }
-
-            form.submit();
-        });
-
-        const form5 = document.getElementById('formulario_registro');
-        const ContraseñaInput = document.getElementById('Contraseña');
-
-        form5.addEventListener('submit', function(event){
-            event.preventDefault();
-
-            if(ContraseñaInput.value === ''){
-                alert('Ingrese Contraseña');
-                return;
-            }
-
-            form.submit();
-        });
-
-        const form6 = document.getElementById('formulario_registro');
-        const RepetirContraseñaInput = document.getElementById('Repetir contraseña');
-
-        form6.addEventListener('submit', function(event){
-            event.preventDefault();
-
-            if(RepetirContraseñaInput.value === ''){
-                alert('Repita Contraseña');
-                return;
-            }
-
-            form.submit();
-        });
-                   
+    if (errores === '') {
+        alert("El formulario se ha enviado")
+        form.submit();
+    } else {
+        alert(errores);
+    }
+});
     </script>
 
 </body>
