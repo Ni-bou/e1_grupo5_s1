@@ -2,45 +2,48 @@ html {
 	font-family: 'Montserrat', sans-serif ;
 }
 header{
-    background: #1f2327;
-	color: whitesmoke;
+    background: #283d4e;/*color azul marino*/
+	color: chocolate;
 	padding: 1rem;
+    width: 98%;
+    height: 22vw;
+    background-image: url(Imagenes/fondoRegistro.jpg);
+    align-items: center;
+    justify-content: center;
+    
 	
 }
 header h1 {
-	font-size: 8rem;
+	font-size: 5rem;
 	text-align: center;
     margin: 1rem;
-    font-family:serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 
 }
 h1{
+    
     margin-top: 3rem;
-    font-size: 2rem;
-	font-style:normal;
-    font-family: sans-serif;
-	text-decoration: underline;
-	color: rgb(248, 245, 245);
-    text-decoration-color:darkgrey
+    font-size: 2.5rem;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	color:chocolate ;
 }
 h2 {
-    margin-top: 1rem;
-    font-size: 3rem;
-	font-style:normal;
-    font-family: sans-serif;
-	text-decoration: underline;
-	color: rgb(113, 113, 113);
-    text-decoration-color:darkgrey
+    text-align: center;
+    margin-top: 0px;
+	color: azure;
+    font-family:sans-serif;
+    font-family: normal 900 1em/1 "Font Awesome 6 Free";
     
 }
 
 p{
 	display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
-    font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif rgba(44, 43, 43, 0); 
+    color: azure;
+    font-family: normal 900 1em/1 "Font Awesome 6 Free";
     
 }
 .imagen-con-texto {
@@ -124,7 +127,7 @@ h5{
 
 .contenido {
     width: 100%;
-    height: 100vh;
+    height: 10pv;
     display: flex;
     background-image: url(Imagenes/fondoRegistro.jpg);
     align-items: center;
@@ -154,7 +157,7 @@ h5{
     height: 3px;
     border-radius: 3px;
     background-color: chocolate;
-    position: absolute;
+    position:relative;
     bottom: -12px;
     left: 50%;
     transform: translate(-50%);
@@ -229,4 +232,9 @@ form p a{
 
 .btn-limpiar button.disable{
     height: 30px;
+}
+.contenedor{/*es la clase de cada categoria en su pagina el tamaño de la inagen de fondo*/
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
