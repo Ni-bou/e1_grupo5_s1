@@ -2,59 +2,55 @@
 <html lang="en">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="detalles.css" />
-    <!-- Enlace al archivo CSS de Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Enlace a los archivos JavaScript de Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</head>
-
-<head>
-    <title>Duoc Games</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        /* Estilos CSS */
-        #titulo {
-            text-align: center;
-        }
-
-        .contenedor {}
-
         .texto-superpuesto {
             position: absolute;
-            top: 25%;
-
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.397);
+            font-size: 100;
+        }
+
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.158);
+            color: white;
+            padding: 20px;
+        }
+
+        .portada-title {
+            
             color: rgb(255, 255, 255);
             text-shadow: 1px 1px 1px black,
                 0px 1px 0px black,
                 -1px 0px 0px black,
                 0px -1px 0px black;
-            font-size: 25px;
+            font-size: 50px;
         }
+
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accion</title>
 </head>
 
-<body>
+<body style="background-color: #283d4e;">
 
-    <body style="background-color: darkgrey;" <div style="align-items: center; position: absolute; width: 90%;">
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <!--INICIO CODIGO DEL PREVIO AL SISTEMA DE CUADRICULAS BODY-->
-
-
-
-                    <div class="contenedor">
-                        <div class="texto-superpuesto">
-                            <br>
-                            <!-- Menú de categorias -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="contenedor imagen-contenedor">
+                    <div class="card text-bg-dark">
+                        <img src="Imagenes/JuegosMundoAbierto.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="portada-title">MUNDO ABIERTO</h5>
+                            <h5 class="texto-superpuesto">Descubre un vasto mundo lleno de secretos y desafíos en los videojuegos de mundo abierto. Explora paisajes detallados, domina habilidades y forja tu propio destino en una narrativa emocionante. ¿Listo para una aventura sin límites? ¡La epopeya te espera en estos cautivadores juegos de mundo abierto!</h5>
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="menu-lateral-label"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,76 +65,67 @@
                                     <li><a class="dropdown-item" href="Terror.html">TERROR</a></li>
                                 </ul>
                             </div>
-                            <h1>
-                                <center>MUNDO ABIERTO</center>
-                            </h1>
-                            <br>
-                            <br>
-                            <br>
-                            ¡Bienvenido a un vasto universo lleno de posibilidades infinitas! Los videojuegos de mundo
-                            abierto te
-                            invitan a sumergirte en paisajes impresionantes y a explorar mundos ricamente detallados
-                            donde la
-                            aventura te espera en cada esquina. Desde ciudades bulliciosas hasta paisajes desolados,
-                            cada rincón
-                            está lleno de secretos por descubrir y desafíos por superar. Domina tus habilidades,
-                            personaliza tu
-                            camino y forja tu propio destino mientras te sumerges en una narrativa rica y emocionante.
-                            ¿Estás listo
-                            para embarcarte en una epopeya sin límites y escribir tu propia leyenda en los juegos de
-                            mundo abierto
-                            más cautivadores? ¡La aventura te espera!
                         </div>
-                        <img src="Imagenes/JuegosMundoAbierto.jpg" width="100%" height="650">
                     </div>
+                </div>
+                <br /> <!-- Salto de linea -->
 
-
-                    <br /> <!-- Salto de linea -->
-                    <div class="juegos">
-                        <div class="capsula_juegos" style="border: 1px solid rgb(179, 107, 56);">
-                            <div class="juego_imagen"><!--imagen-->
-                                <img src="Imagenes/horizon.jpg" width="150px" height="100px">
-                            </div>
-                            <div class="informacion_juego"><!--informacion-->
-                                <h4 class="descripcion" style="color: azure;">Horizon Zero Dawn es un videojuego de rol
-                                    con
-                                    elementos de aventura en tercera persona. El juego se ambienta en un ...</h4>
-                                <h5 class="valor" style="color: azure;">Costo: $23.900</h5>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="/Imagenes/horizon.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <center>
+                                        <h5 class="card-title">HORIZON ZERO DAWN</h5>
+                                    </center>
+                                    <p class="card-text"style="color: black;">
+                                        Explora un mundo posapocalíptico lleno de misterios y desafíos como Aloy, en una épica aventura llena de acción.</p>
+                                    <center>
+                                        <h6 class="valor" style="color: rgb(180, 115, 30);">Costo: $23.900</h6>
+                                    </center>
+                                </div>
                             </div>
                         </div>
-                        <div class="capsula_juegos" style="border: 1px solid rgb(179, 107, 56);">
-                            <div class="juego_imagen"><!--imagen-->
-                                <img src="Imagenes/skyclimbers.jpg" width="150px" height="100px">
-                            </div>
-                            <div class="informacion_juego"><!--informacion-->
-                                <h4 class="descripcion" style="color: azure;"> Construye tu reino, elige tu clase y
-                                    domestica
-                                    monstruos en este juego de rol multijugador de construcción de ciud...</h4>
-                                <h5 class="valor" style="color: azure;">Costo: $27.000</h5>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="/Imagenes/skyclimbers.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <center>
+                                        <h5 class="card-title">SKY CLIMBERS</h5>
+                                    </center>
+                                    <p class="card-text" style="color: black;">
+                                        Escala montañas, descubre secretos y enfrenta desafíos en un mundo fantástico vertical lleno de emociones y peligros.</p>
+                                    <center>
+                                        <h6 class="valor" style="color: rgb(180, 115, 30);">Costo: $27.000</h6>
+                                    </center>
+                                </div>
                             </div>
                         </div>
-                        <div class="capsula_juegos" style="border: 1px solid rgb(179, 107, 56);">
-                            <div class="juego_imagen"><!--imagen-->
-                                <img src="Imagenes/minecraft.jpg" width="150px" height="100px">
-                            </div>
-                            <div class="informacion_juego"><!--informacion-->
-                                <h4 class="descripcion" style="color: azure;">Los jugadores pueden modelar el mundo a su
-                                    gusto,
-                                    destruir y construir, como si estuviesen jugando en una caja de arena.</h4>
-                                <h5 class="valor" style="color: azure;">Costo: $30.990</h5>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="/Imagenes/minecraftimagen.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <center>
+                                        <h5 class="card-title">MINECRAFT</h5>
+                                    </center>
+                                    <p class="card-text" style="color: black;">
+                                        Crea y explora un mundo de bloques infinito, sobrevive a criaturas y desafíos, y deja volar tu creatividad en un entorno sandbox.</p>
+                                    <center>
+                                        <h6 class="valor" style="color: rgb(180, 115, 30);">Costo: $30.990</h6>
+                                    </center>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <!--FIN CODIGO DEL BODY-->
-
                 </div>
             </div>
         </div>
+    </div>
 
-
-
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>

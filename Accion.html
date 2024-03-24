@@ -2,54 +2,61 @@
 <html lang="en">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="detalles.css" />
-    <!-- Enlace al archivo CSS de Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Enlace a los archivos JavaScript de Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</head>
-
-<head>
-    <title>Duoc Games</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        /* Estilos CSS */
-        #titulo {
-            text-align: center;
-        }
-
-        .contenedor {}
-
         .texto-superpuesto {
             position: absolute;
-            top: 25%;
-
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.397);
+            font-size: 100;
+        }
+
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.158);
+            color: white;
+            padding: 20px;
+        }
+
+        .portada-title {
+            
             color: rgb(255, 255, 255);
             text-shadow: 1px 1px 1px black,
                 0px 1px 0px black,
                 -1px 0px 0px black,
                 0px -1px 0px black;
-            font-size: 25px;
+            font-size: 50px;
         }
+
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accion</title>
 </head>
 
-<body>
+<body style="background-color: #283d4e;">
 
-    <body style="background-color: #283d4e;" <div style="align-items: center; position: absolute; width: 90%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <!--INICIO CODIGO DEL PREVIO AL SISTEMA DE CUADRICULAS BODY-->
-
-                    <div class="contenedor">
-                        <div class="texto-superpuesto" style="justify-content: center;">
-                            <!-- Menú de categorias -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="contenedor imagen-contenedor">
+                    <div class="card text-bg-dark">
+                        <img src="Imagenes/JuegosAccion.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="portada-title">ACCIÓN</h5>
+                            <h5 class="texto-superpuesto">¡Bienvenidos a un mundo de adrenalina y emoción! Los videojuegos
+                                de acción te transportan a universos vibrantes donde tú eres el héroe principal.
+                                Enfréntate a desafíos épicos, domina habilidades asombrosas y haz frente a enemigos
+                                formidables mientras exploras entornos impresionantes. Desde combates intensos hasta
+                                intrincados acertijos, cada momento está cargado de emoción y peligro. Descubre tu
+                                destino y desata tu potencial en los juegos de acción más emocionantes del mundo.
+                                ¡Prepárate para la aventura!</h5>
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="menu-lateral-label"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,80 +71,70 @@
                                     <li><a class="dropdown-item" href="Terror.html">TERROR</a></li>
                                 </ul>
                             </div>
-
-                            <h1 style="display: block;">
-                                <center>ACCIÓN</center>
-                            </h1>
-                            <br>
-                            <p style="font-size: large;">¡Bienvenidos a un mundo de adrenalina y emoción! Los
-                                videojuegos de acción
-                                te transportan a universos vibrantes donde tú eres el héroe principal. Enfréntate a
-                                desafíos épicos,
-                                domina habilidades asombrosas y haz frente a enemigos formidables mientras exploras
-                                entornos
-                                impresionantes. Desde combates intensos hasta intrincados acertijos, cada momento está
-                                cargado de
-                                emoción y peligro. Descubre tu destino y desata tu potencial en los juegos de acción más
-                                emocionantes del mundo. ¡Prepárate para la aventura!</p>
-                        </div>
-                        <img src="Imagenes/JuegosAccion.jpg" width="100%" height="600vh">
-                    </div>
-                    <br /> <!-- Salto de linea -->
-
-                </div>
-                <div class="juegos">
-                    <div class="capsula_juegos" style="border: 1px solid rgb(179, 107, 56);">
-                        <div class="juego_imagen"><!--imagen-->
-                            <img src="Imagenes/star-wars.jpg" width="150px" height="100px">
-                        </div>
-                        <div class="informacion_juego"><!--informacion-->
-                            <h4 class="descripcion" style="color: azure;">Star Wars Outlaws es un juego de acción y
-                                aventura en
-                                mundo abierto para consolas PlayStation 5, Xbox Series y PC</h4>
-                            <h5 class="valor" style="color: azure;">Costo: $23.900</h5>
-                        </div>
-                    </div>
-                    <div class="capsula_juegos" style="border: 1px solid rgb(179, 107, 56);">
-                        <div class="juego_imagen"><!--imagen-->
-                            <img src="Imagenes/Uncharted.jpg" width="150px" height="100px">
-                        </div>
-                        <div class="informacion_juego"><!--informacion-->
-                            <h4 class="descripcion" style="color: azure;">videojuego de acción y aventura de disparos en
-                                tercera
-                                persona. Sagas más famosas en el universo de las consolas</h4>
-                            <h5 class="valor" style="color: azure;">Costo: $27.000</h5>
-                        </div>
-                    </div>
-                    <div class="capsula_juegos" style="border: 1px solid rgb(179, 107, 56);">
-                        <div class="juego_imagen"><!--imagen-->
-                            <img src="Imagenes/apertura-destiny.jpg" width="150px" height="100px">
-                        </div>
-                        <div class="informacion_juego"><!--informacion-->
-                            <h4 class="descripcion" style="color: azure;">Destiny es un shooter en primera persona que
-                                ofrece
-                                una combinación sin precedentes de historia de corte cine..</h4>
-                            <h5 class="valor" style="color: azure;">Costo: $30.990</h5>
                         </div>
                     </div>
                 </div>
+                <br /> <!-- Salto de linea -->
 
-
-
-
-
-
-
-                <!--FIN CODIGO DEL BODY-->
-
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="/Imagenes/star-wars.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <center>
+                                        <h5 class="card-title">Star Wars</h5>
+                                    </center>
+                                    <p class="card-text"style="color: black;">
+                                        Star Wars Outlaws es un juego de acción y aventura en
+                                        mundo abierto para consolas PlayStation 5, Xbox Series y PC</p>
+                                    <center>
+                                        <h6 class="valor" style="color: rgb(180, 115, 30);">Costo: $23.900</h6>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="/Imagenes/Uncharted.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <center>
+                                        <h5 class="card-title">Uncharted</h5>
+                                    </center>
+                                    <p class="card-text" style="color: black;">
+                                        Videojuego de acción y aventura de disparos en tercera
+                                        persona. Sagas más famosas en el universo de las consolas</p>
+                                    <center>
+                                        <h6 class="valor" style="color: rgb(180, 115, 30);">Costo: $27.000</h6>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="/Imagenes/destinyprueba.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <center>
+                                        <h5 class="card-title">Destiny</h5>
+                                    </center>
+                                    <p class="card-text" style="color: black;">
+                                        Destiny es un shooter en primera persona que ofrece
+                                        una combinación sin precedentes de historia de corte cine.</p>
+                                    <center>
+                                        <h6 class="valor" style="color: rgb(180, 115, 30);">Costo: $30.990</h6>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
+    </div>
 
-
-
-
-
-
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
