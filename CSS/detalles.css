@@ -6,9 +6,9 @@ header {
     background: #302d47; /* color azul marino */
     color: rgb(235, 131, 12);
     padding: 1rem;
-    width: 98%;
-    height: 22vw;
-    background-image: url(Imagenes/fondoRegistro.jpg);
+    width: 100%;
+    height: 100%;
+    background-image: url('ImagenesCSS/fondoRegistro.jpg');
     align-items: center;
     justify-content: center;
 }
@@ -102,9 +102,8 @@ h5 {
 
 .contenido {
     width: 100%;
-    height: 10vh;
+    height: 100%;
     display: flex;
-    background-image: url(Imagenes/fondoRegistro.jpg);
     align-items: center;
     justify-content: center;
 }
@@ -182,4 +181,8 @@ form p a {
     display: flex;
     justify-content: space-between;
 }
+
+.card {
+    margin-top: 3px;
+}   
 
